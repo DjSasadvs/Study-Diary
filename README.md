@@ -2,8 +2,8 @@
 Tips study here
 
 >Contains
->> c++
+>> [c++](https://github.com/DjSasadvs/Study-Diary/blob/master/c++%20study.md)
 <br>
->> github
+>> [github](https://github.com/DjSasadvs/Study-Diary/blob/master/git%20study.md)
 <br>
 >> article
