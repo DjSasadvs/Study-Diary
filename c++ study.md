@@ -52,3 +52,13 @@ size
 2.resize和reserve的区别<br/>
   * reserve表示容器预留空间，但并不是真正的创建对象，需要通过insert（）或push_back（）等创建对象;resize既分配了空间，也创建了对象<br/>
   * reserve只修改capacity大小，不修改size大小;resize既修改capacity大小，也修改size大小
+
+12-21-2015
+--------------------------
+1.assert()断言
+
+ ```
+ void assert(   
+   int expression   
+);  
+```
