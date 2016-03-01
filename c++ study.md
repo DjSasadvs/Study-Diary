@@ -1,3 +1,28 @@
+03-01-2016
+----------------
+类型升级
+* unsigned int是最大的了，所以类型无法提升，而unsigned short型，如果出现上面那种情况，就会向容量更大类型提升，即提升为int
+```
+#include <iostream>
+using namespace std;
+ 
+int main(int argc, char* argv[])
+{
+    unsigned short us1 = 2, us2 = 3;
+    cout << (us1 - us2) << endl;                        // 输出 -1
+    cout << typeid((us1 - us2)).name() << endl;        // 类型提升为int
+    int i1 = ((us1 - us2) > 0);
+    cout << i1 << endl;
+ 
+    unsigned int ui1 = 2, ui2 = 3;
+    cout << (ui1 - ui2) << endl;                        // 输出一个很大的int
+    cout << typeid((ui1 - ui2)).name() << endl;        // 类型仍然是unsigned int
+    int i2 = ((ui1 - ui2) > 0);
+    cout << i2 << endl;
+    return 0;
+}
+```
+
 10-24-2015
 -----------------
 ```
