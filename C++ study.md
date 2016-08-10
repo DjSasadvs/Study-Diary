@@ -1,3 +1,28 @@
+08-10-2016
+----------------
+实现一个 malloc
+* [跳转链接](http://blog.codinglabs.org/articles/a-malloc-tutorial.html)
+
+08-09-2016
+----------------
+内存泄漏和野指针
+* 内存分配后应进行回收
+ * vector<T>:
+ ```
+  vector<T> v;
+  for(int i = 0; i < 10000; i++)
+  {
+     v.clear(); vector<T>(v).swap(v);
+  }
+ ```
+* 野指针需要置为空指针
+```
+char *memory = (char *)malloc(1024);
+memset(memory, 0, 1024);
+memset(memory, 0, 1024 - 1);
+free(memory); memory = NULL;
+```
+
 03-01-2016
 ----------------
 类型升级
