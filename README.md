@@ -6,4 +6,8 @@ Tips study here
 <br>
 >> [github](https://github.com/DjSasadvs/Study-Diary/blob/master/git%20study.md)
 <br>
+>> [java](https://github.com/DjSasadvs/Study-Diary/blob/master/Java%20study.md)
+<br>
+>> [python](https://github.com/DjSasadvs/Study-Diary/blob/master/Python%20study.md)
+<br>
 >> article
